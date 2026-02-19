@@ -3,88 +3,95 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms & Conditions • SpinNudge</title>
-  <style>
-    :root{--bg:#0b1020;--text:#e9edf7;--muted:#b7c0dd;--accent:#7dd3fc;--line:rgba(255,255,255,.12);}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:860px;margin:0 auto;padding:28px 18px 64px}
-    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    .brand{font-weight:800;letter-spacing:.2px}
-    .card{margin-top:18px;border:1px solid var(--line);border-radius:16px;padding:22px;background:rgba(255,255,255,.04)}
-    h1{margin:0 0 6px;font-size:30px}
-    .meta{color:var(--muted);margin:0 0 18px;font-size:13px}
-    h2{margin:22px 0 8px;font-size:16px}
-    p,li{color:var(--muted);line-height:1.6}
-    ul{margin:8px 0 0 18px}
-    footer{margin-top:18px;color:var(--muted);font-size:12.5px}
-    .pill{border:1px solid var(--line);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.04)}
-  </style>
+  <title>Terms &amp; Conditions - SpinNudge</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <div class="top">
-      <div class="brand">SpinNudge</div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a class="pill" href="/">Home</a>
-        <a class="pill" href="/privacy">Privacy</a>
-      </div>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">
+        <img src="/assets/logo.png" alt="SpinNudge logo" class="logo" />
+        <span class="brand-name">SpinNudge</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-pill" href="/">Home</a>
+        <a class="nav-pill" href="/privacy">Privacy</a>
+        <a class="nav-pill active" href="/terms">Terms</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="card">
-      <h1>Terms & Conditions</h1>
-      <p class="meta">Effective date: 02/17/2026</p>
+  <main class="container">
+    <section class="card page">
+      <h1>Terms &amp; Conditions</h1>
+      <p class="muted">Effective date: 02/17/2026</p>
 
-      <h2>Service description</h2>
-      <p>
-        SpinNudge provides automated SMS and voice call notifications related to laundry sessions initiated by users.
-        These notifications may include start confirmations, completion reminders, and escalation messages/calls if laundry is not retrieved within the expected timeframe.
-      </p>
+      <section class="section-card">
+        <h2>Service description</h2>
+        <p>
+          SpinNudge provides automated SMS and voice call notifications related to laundry sessions initiated by users.
+        </p>
+      </section>
 
-      <h2>Consent to communications</h2>
-      <p>
-        By entering your phone number and submitting it through SpinNudge, you expressly consent to receive:
-      </p>
-      <ul>
-        <li>Automated SMS messages</li>
-        <li>Automated voice calls (including escalation calls if you do not respond to SMS or do not retrieve laundry on time)</li>
-      </ul>
-      <p>
-        Message frequency varies by usage. Message & data rates may apply depending on your carrier.
-      </p>
+      <section class="section-card">
+        <h2>Consent to communications</h2>
+        <p>
+          By entering your phone number and submitting a session, you agree to receive automated messages and calls for that session.
+        </p>
+        <ul class="checklist">
+          <li><strong>Automated SMS</strong>: start confirmations, completion reminders, follow-ups.</li>
+          <li><strong>Automated voice calls</strong>: escalation if SMS is ignored or laundry isn’t retrieved within the expected timeframe.</li>
+          <li>Message frequency varies by usage.</li>
+          <li>Message &amp; data rates may apply; voice call charges may apply depending on your carrier/plan.</li>
+          <li>To stop SMS: reply <strong>STOP</strong>. For help: reply <strong>HELP</strong>.</li>
+          <li>To stop voice calls: contact <a class="link" href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a>.</li>
+        </ul>
+      </section>
 
-      <h2>Opt-out and support</h2>
-      <ul>
-        <li>SMS opt-out: Reply <strong>STOP</strong> to unsubscribe from SMS messages</li>
-        <li>Help: Reply <strong>HELP</strong> for support</li>
-        <li>Voice-call opt-out: Contact us to request removal from voice call notifications</li>
-      </ul>
+      <section class="section-card">
+        <h2>No marketing</h2>
+        <p>SpinNudge does not send promotional or marketing messages.</p>
+      </section>
 
-      <h2>No marketing</h2>
-      <p>SpinNudge does not send promotional or marketing messages.</p>
+      <section class="section-card">
+        <h2>Acceptable use</h2>
+        <p>
+          You may not use the service for unlawful, abusive, or disruptive purposes, including attempting to spam or harass others.
+        </p>
+      </section>
 
-      <h2>Acceptable use</h2>
-      <p>
-        You agree not to use the service for unlawful, abusive, disruptive, or fraudulent purposes, and not to attempt to interfere with the service or its users.
-      </p>
+      <section class="section-card">
+        <h2>Availability and delivery</h2>
+        <p>
+          Delivery of SMS or calls depends on carrier networks and may not be available at all times. We do not guarantee delivery timing.
+        </p>
+      </section>
 
-      <h2>Availability</h2>
-      <p>
-        Delivery of SMS or calls depends on carrier networks and third-party providers and cannot be guaranteed.
-      </p>
+      <section class="section-card">
+        <h2>Contact</h2>
+        <p>
+          Support email: <a class="link" href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a>
+        </p>
+      </section>
 
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a></p>
+      <section class="section-card">
+        <h2>Privacy</h2>
+        <p>
+          Please review our <a class="link" href="/privacy">Privacy Policy</a>.
+        </p>
+      </section>
+    </section>
+  </main>
 
-      <p style="color:var(--muted);font-size:13px">
-        Privacy Policy: <a href="/privacy">https://spinnudge.com/privacy</a>
-      </p>
-
-      <footer>
-        Back to <a href="/">Home</a> • View <a href="/privacy">Privacy</a>
-      </footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 SpinNudge</span>
+      <span class="sep">·</span>
+      <a href="/privacy">Privacy</a>
+      <span class="sep">·</span>
+      <a href="/terms">Terms</a>
     </div>
-  </div>
+  </footer>
 </body>
 </html>

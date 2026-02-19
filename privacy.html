@@ -3,93 +3,96 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy • SpinNudge</title>
-  <style>
-    :root{--bg:#0b1020;--text:#e9edf7;--muted:#b7c0dd;--accent:#7dd3fc;--line:rgba(255,255,255,.12);}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:860px;margin:0 auto;padding:28px 18px 64px}
-    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    .brand{font-weight:800;letter-spacing:.2px}
-    .card{margin-top:18px;border:1px solid var(--line);border-radius:16px;padding:22px;background:rgba(255,255,255,.04)}
-    h1{margin:0 0 6px;font-size:30px}
-    .meta{color:var(--muted);margin:0 0 18px;font-size:13px}
-    h2{margin:22px 0 8px;font-size:16px}
-    p,li{color:var(--muted);line-height:1.6}
-    ul{margin:8px 0 0 18px}
-    footer{margin-top:18px;color:var(--muted);font-size:12.5px}
-    .pill{border:1px solid var(--line);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.04)}
-  </style>
+  <title>Privacy Policy - SpinNudge</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <div class="top">
-      <div class="brand">SpinNudge</div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a class="pill" href="/">Home</a>
-        <a class="pill" href="/terms">Terms</a>
-      </div>
-    </div>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">
+        <img src="/assets/logo.png" alt="SpinNudge logo" class="logo" />
+        <span class="brand-name">SpinNudge</span>
+      </a>
 
-    <div class="card">
+      <nav class="nav">
+        <a class="nav-pill" href="/">Home</a>
+        <a class="nav-pill active" href="/privacy">Privacy</a>
+        <a class="nav-pill" href="/terms">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card page">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective date: 02/17/2026</p>
+      <p class="muted">Effective date: 02/17/2026</p>
 
-      <p>
-        SpinNudge (“we,” “us,” or “our”) provides automated laundry-session notifications via SMS and voice calls.
-        This Privacy Policy explains what information we collect and how we use it.
-      </p>
+      <section class="section-card">
+        <h2>Information we collect</h2>
+        <ul class="checklist">
+          <li>Phone number</li>
+          <li>Apartment/room identifier (if provided)</li>
+          <li>Laundry session details (machine ID, cycle type, start time, expected completion time, status)</li>
+          <li>System logs and timestamps necessary to operate the service</li>
+        </ul>
+      </section>
 
-      <h2>Information we collect</h2>
-      <ul>
-        <li>Phone number</li>
-        <li>Apartment/room identifier (if provided)</li>
-        <li>Laundry session details (machine ID, cycle type, start time, expected completion time, status)</li>
-        <li>System logs and timestamps necessary to operate and secure the service</li>
-      </ul>
+      <section class="section-card">
+        <h2>How we use information</h2>
+        <ul class="checklist">
+          <li>Send SMS notifications related to your laundry session</li>
+          <li>Place automated voice calls when needed (for example, if SMS is ignored and laundry is not retrieved in time)</li>
+          <li>Operate and maintain the service</li>
+          <li>Prevent abuse and ensure system integrity</li>
+        </ul>
+      </section>
 
-      <h2>How we use information</h2>
-      <ul>
-        <li>Send SMS notifications related to your laundry session</li>
-        <li>Place automated voice calls if needed (for example, if a user does not respond to SMS or does not retrieve laundry within the expected timeframe)</li>
-        <li>Operate, maintain, and improve the service</li>
-        <li>Prevent abuse and protect system integrity</li>
-      </ul>
+      <section class="section-card">
+        <h2>SMS and voice communications</h2>
+        <p>
+          By entering your phone number and submitting it through SpinNudge, you consent to receive
+          automated SMS and voice calls related to your laundry session.
+        </p>
+        <ul class="checklist">
+          <li>Message frequency varies by usage.</li>
+          <li>Message &amp; data rates may apply.</li>
+          <li>To opt out of SMS, reply <strong>STOP</strong>. For help, reply <strong>HELP</strong>.</li>
+          <li>If you no longer wish to receive voice calls, contact us at <a class="link" href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a>.</li>
+        </ul>
+      </section>
 
-      <h2>SMS and voice communications</h2>
-      <p>
-        By entering your phone number and submitting it through SpinNudge, you consent to receive automated SMS and voice calls
-        related to your laundry session. Message frequency varies by usage. Message & data rates may apply.
-      </p>
+      <section class="section-card">
+        <h2>Sharing of information</h2>
+        <p>
+          We may share information with service providers necessary to deliver SMS and voice services (e.g., telecommunications providers).
+          We do not sell personal information.
+        </p>
+      </section>
 
-      <h2>Sharing of information</h2>
-      <p>
-        We may share information with service providers strictly as needed to deliver SMS and voice services (e.g., telecommunications providers).
-        We do not sell personal information.
-      </p>
+      <section class="section-card">
+        <h2>Data retention</h2>
+        <p>
+          We retain information only as long as necessary to provide the service and maintain operational records, then securely delete or anonymize it.
+        </p>
+      </section>
 
-      <h2>Data retention</h2>
-      <p>
-        We retain information only as long as necessary to provide the service and maintain operational records, then delete or anonymize it when feasible.
-      </p>
+      <section class="section-card">
+        <h2>Contact</h2>
+        <p>
+          Support email: <a class="link" href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a>
+        </p>
+      </section>
+    </section>
+  </main>
 
-      <h2>Your choices</h2>
-      <ul>
-        <li>SMS opt-out: Reply <strong>STOP</strong> to unsubscribe from SMS messages</li>
-        <li>Help: Reply <strong>HELP</strong> for assistance</li>
-        <li>Voice-call opt-out: Contact us to request removal from voice call notifications</li>
-      </ul>
-
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a>
-      </p>
-
-      <footer>
-        Back to <a href="/">Home</a> • View <a href="/terms">Terms</a>
-      </footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 SpinNudge</span>
+      <span class="sep">·</span>
+      <a href="/privacy">Privacy</a>
+      <span class="sep">·</span>
+      <a href="/terms">Terms</a>
     </div>
-  </div>
+  </footer>
 </body>
 </html>
