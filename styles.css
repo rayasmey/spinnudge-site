@@ -42,13 +42,13 @@ body{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding: 18px 0;
+  padding: 14px 0;
 }
 
 .brand{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:12px;
   text-decoration:none;
   color:inherit;
 }
@@ -206,7 +206,7 @@ h1{
 }
 
 .brand .logo{
-  width: 90px !important;
-  height: 90px !important;
-  display: block;
+  width: 96px !important;
+  height: 48px !important;
+  object-fit: contain;
 }
