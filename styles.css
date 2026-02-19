@@ -54,8 +54,10 @@ body{
 }
 
 .logo{
-  width: 60px;
-  height: auto;
+  width: 96px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-name{
@@ -203,10 +205,4 @@ h1{
 @media (max-width: 720px){
   h1{ font-size: 30px; }
   .grid{ grid-template-columns: 1fr; }
-}
-
-.brand .logo{
-  width: 96px !important;
-  height: 48px !important;
-  object-fit: contain;
 }
