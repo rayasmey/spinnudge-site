@@ -3,85 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SpinNudge — Privacy Policy</title>
+  <title>Privacy Policy • SpinNudge</title>
   <style>
-    :root { --fg:#111; --muted:#666; --bg:#fafafa; --card:#fff; --border:#e6e6e6; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--fg); background:var(--bg); }
-    header, footer { background:#fff; border-bottom:1px solid var(--border); }
-    footer { border-top:1px solid var(--border); border-bottom:none; color:var(--muted); }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 18px 16px; }
-    h1 { margin: 0 0 6px; font-size: 26px; }
-    .muted { color: var(--muted); }
-    main .wrap { padding-top: 12px; padding-bottom: 40px; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius: 12px; padding: 16px; }
-    h2 { margin-top: 18px; font-size: 18px; }
-    ul { margin: 10px 0 0 18px; }
-    a { color: #0b57d0; }
-    code { background:#f1f1f1; padding: 2px 6px; border-radius: 6px; }
+    :root{--bg:#0b1020;--text:#e9edf7;--muted:#b7c0dd;--accent:#7dd3fc;--line:rgba(255,255,255,.12);}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:860px;margin:0 auto;padding:28px 18px 64px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .brand{font-weight:800;letter-spacing:.2px}
+    .card{margin-top:18px;border:1px solid var(--line);border-radius:16px;padding:22px;background:rgba(255,255,255,.04)}
+    h1{margin:0 0 6px;font-size:30px}
+    .meta{color:var(--muted);margin:0 0 18px;font-size:13px}
+    h2{margin:22px 0 8px;font-size:16px}
+    p,li{color:var(--muted);line-height:1.6}
+    ul{margin:8px 0 0 18px}
+    footer{margin-top:18px;color:var(--muted);font-size:12.5px}
+    .pill{border:1px solid var(--line);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.04)}
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <a href="/" class="muted">← Home</a>
-      <h1>Privacy Policy</h1>
-      <div class="muted">Effective Date: 02/17/2026</div>
-    </div>
-  </header>
-
-  <main>
-    <div class="wrap">
-      <div class="card">
-        <p>
-          SpinNudge (“we,” “us,” or “our”) provides automated SMS and voice call notifications related to laundry sessions initiated by users.
-        </p>
-
-        <h2>Information We Collect</h2>
-        <ul>
-          <li>Phone number</li>
-          <li>Apartment/room identifier (if provided)</li>
-          <li>Laundry session details (machine ID, cycle type, start time, expected completion time, status)</li>
-          <li>Operational logs and timestamps needed to run and protect the service</li>
-        </ul>
-
-        <h2>How We Use Information</h2>
-        <ul>
-          <li>Send SMS notifications related to your laundry session</li>
-          <li>Place automated voice calls when needed (for example, if a user fails to respond to SMS notifications or does not retrieve laundry within the expected timeframe)</li>
-          <li>Operate, maintain, and secure the service; prevent abuse</li>
-        </ul>
-
-        <h2>Sharing</h2>
-        <p>
-          We may share information with service providers necessary to deliver SMS/voice services (e.g., telecommunications providers).
-          We do not sell personal information.
-        </p>
-
-        <h2>Data Retention</h2>
-        <p>
-          Information is retained only as long as necessary to provide the service and maintain operational records, then deleted or anonymized where appropriate.
-        </p>
-
-        <h2>Your Choices</h2>
-        <ul>
-          <li>Opt out of SMS by replying <code>STOP</code></li>
-          <li>For help, reply <code>HELP</code></li>
-          <li>If you no longer wish to receive voice calls, contact us using the email below</li>
-        </ul>
-
-        <h2>Contact</h2>
-        <p>
-          Email: <a href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a><br/>
-          Website: <a href="https://spinnudge.com">https://spinnudge.com</a>
-        </p>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">SpinNudge</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="pill" href="/">Home</a>
+        <a class="pill" href="/terms">Terms</a>
       </div>
     </div>
-  </main>
 
-  <footer>
-    <div class="wrap">© <span id="y"></span> SpinNudge</div>
-  </footer>
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: 02/17/2026</p>
 
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+      <p>
+        SpinNudge (“we,” “us,” or “our”) provides automated laundry-session notifications via SMS and voice calls.
+        This Privacy Policy explains what information we collect and how we use it.
+      </p>
+
+      <h2>Information we collect</h2>
+      <ul>
+        <li>Phone number</li>
+        <li>Apartment/room identifier (if provided)</li>
+        <li>Laundry session details (machine ID, cycle type, start time, expected completion time, status)</li>
+        <li>System logs and timestamps necessary to operate and secure the service</li>
+      </ul>
+
+      <h2>How we use information</h2>
+      <ul>
+        <li>Send SMS notifications related to your laundry session</li>
+        <li>Place automated voice calls if needed (for example, if a user does not respond to SMS or does not retrieve laundry within the expected timeframe)</li>
+        <li>Operate, maintain, and improve the service</li>
+        <li>Prevent abuse and protect system integrity</li>
+      </ul>
+
+      <h2>SMS and voice communications</h2>
+      <p>
+        By entering your phone number and submitting it through SpinNudge, you consent to receive automated SMS and voice calls
+        related to your laundry session. Message frequency varies by usage. Message & data rates may apply.
+      </p>
+
+      <h2>Sharing of information</h2>
+      <p>
+        We may share information with service providers strictly as needed to deliver SMS and voice services (e.g., telecommunications providers).
+        We do not sell personal information.
+      </p>
+
+      <h2>Data retention</h2>
+      <p>
+        We retain information only as long as necessary to provide the service and maintain operational records, then delete or anonymize it when feasible.
+      </p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>SMS opt-out: Reply <strong>STOP</strong> to unsubscribe from SMS messages</li>
+        <li>Help: Reply <strong>HELP</strong> for assistance</li>
+        <li>Voice-call opt-out: Contact us to request removal from voice call notifications</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a>
+      </p>
+
+      <footer>
+        Back to <a href="/">Home</a> • View <a href="/terms">Terms</a>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>

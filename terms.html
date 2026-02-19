@@ -3,84 +3,88 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SpinNudge — Terms & Conditions</title>
+  <title>Terms & Conditions • SpinNudge</title>
   <style>
-    :root { --fg:#111; --muted:#666; --bg:#fafafa; --card:#fff; --border:#e6e6e6; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--fg); background:var(--bg); }
-    header, footer { background:#fff; border-bottom:1px solid var(--border); }
-    footer { border-top:1px solid var(--border); border-bottom:none; color:var(--muted); }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 18px 16px; }
-    h1 { margin: 0 0 6px; font-size: 26px; }
-    .muted { color: var(--muted); }
-    main .wrap { padding-top: 12px; padding-bottom: 40px; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius: 12px; padding: 16px; }
-    h2 { margin-top: 18px; font-size: 18px; }
-    ul { margin: 10px 0 0 18px; }
-    a { color: #0b57d0; }
-    code { background:#f1f1f1; padding: 2px 6px; border-radius: 6px; }
+    :root{--bg:#0b1020;--text:#e9edf7;--muted:#b7c0dd;--accent:#7dd3fc;--line:rgba(255,255,255,.12);}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:860px;margin:0 auto;padding:28px 18px 64px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .brand{font-weight:800;letter-spacing:.2px}
+    .card{margin-top:18px;border:1px solid var(--line);border-radius:16px;padding:22px;background:rgba(255,255,255,.04)}
+    h1{margin:0 0 6px;font-size:30px}
+    .meta{color:var(--muted);margin:0 0 18px;font-size:13px}
+    h2{margin:22px 0 8px;font-size:16px}
+    p,li{color:var(--muted);line-height:1.6}
+    ul{margin:8px 0 0 18px}
+    footer{margin-top:18px;color:var(--muted);font-size:12.5px}
+    .pill{border:1px solid var(--line);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.04)}
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <a href="/" class="muted">← Home</a>
-      <h1>Terms & Conditions</h1>
-      <div class="muted">Effective Date: 02/17/2026</div>
-    </div>
-  </header>
-
-  <main>
-    <div class="wrap">
-      <div class="card">
-        <h2>Service Description</h2>
-        <p>
-          SpinNudge provides automated SMS and voice call notifications related to laundry sessions initiated by users.
-        </p>
-
-        <h2>Consent to Communications</h2>
-        <p>
-          By entering your phone number and submitting the form, you expressly consent to receive automated communications related to your laundry session, including:
-        </p>
-        <ul>
-          <li>Automated SMS messages (session start, reminders, completion notices)</li>
-          <li><strong>Automated voice calls</strong> (for example, if a user does not respond to SMS notifications or does not retrieve laundry within the expected timeframe)</li>
-        </ul>
-
-        <h2>Message Frequency, Costs, and Opt-Out</h2>
-        <ul>
-          <li>Message frequency varies by usage and session activity</li>
-          <li>Message and data rates may apply depending on your carrier</li>
-          <li>Reply <code>STOP</code> to unsubscribe from SMS messages</li>
-          <li>Reply <code>HELP</code> for support</li>
-          <li>To stop voice calls, contact us at the email below</li>
-        </ul>
-
-        <h2>No Marketing</h2>
-        <p>SpinNudge does not send promotional or marketing messages.</p>
-
-        <h2>Availability</h2>
-        <p>
-          Delivery of SMS or calls depends on carrier networks and may not be available or guaranteed at all times.
-        </p>
-
-        <h2>Acceptable Use</h2>
-        <p>
-          You must not use the service for unlawful, abusive, or disruptive purposes.
-        </p>
-
-       <h2>Contact</h2>
-        <p>
-          Email: <a href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a><br/>
-          Website: <a href="https://spinnudge.com">https://spinnudge.com</a>
-        </p>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">SpinNudge</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="pill" href="/">Home</a>
+        <a class="pill" href="/privacy">Privacy</a>
       </div>
     </div>
-  </main>
 
-  <footer>
-    <div class="wrap">© <span id="y"></span> SpinNudge</div>
-  </footer>
+    <div class="card">
+      <h1>Terms & Conditions</h1>
+      <p class="meta">Effective date: 02/17/2026</p>
 
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+      <h2>Service description</h2>
+      <p>
+        SpinNudge provides automated SMS and voice call notifications related to laundry sessions initiated by users.
+        These notifications may include start confirmations, completion reminders, and escalation messages/calls if laundry is not retrieved within the expected timeframe.
+      </p>
+
+      <h2>Consent to communications</h2>
+      <p>
+        By entering your phone number and submitting it through SpinNudge, you expressly consent to receive:
+      </p>
+      <ul>
+        <li>Automated SMS messages</li>
+        <li>Automated voice calls (including escalation calls if you do not respond to SMS or do not retrieve laundry on time)</li>
+      </ul>
+      <p>
+        Message frequency varies by usage. Message & data rates may apply depending on your carrier.
+      </p>
+
+      <h2>Opt-out and support</h2>
+      <ul>
+        <li>SMS opt-out: Reply <strong>STOP</strong> to unsubscribe from SMS messages</li>
+        <li>Help: Reply <strong>HELP</strong> for support</li>
+        <li>Voice-call opt-out: Contact us to request removal from voice call notifications</li>
+      </ul>
+
+      <h2>No marketing</h2>
+      <p>SpinNudge does not send promotional or marketing messages.</p>
+
+      <h2>Acceptable use</h2>
+      <p>
+        You agree not to use the service for unlawful, abusive, disruptive, or fraudulent purposes, and not to attempt to interfere with the service or its users.
+      </p>
+
+      <h2>Availability</h2>
+      <p>
+        Delivery of SMS or calls depends on carrier networks and third-party providers and cannot be guaranteed.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a></p>
+
+      <p style="color:var(--muted);font-size:13px">
+        Privacy Policy: <a href="/privacy">https://spinnudge.com/privacy</a>
+      </p>
+
+      <footer>
+        Back to <a href="/">Home</a> • View <a href="/privacy">Privacy</a>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
