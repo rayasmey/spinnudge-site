@@ -1,12 +1,60 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SpinNudge</title>
+  <style>
+    :root { --fg:#111; --muted:#666; --bg:#fafafa; --card:#fff; --border:#e6e6e6; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+    header { padding:28px 16px; border-bottom:1px solid var(--border); background:#fff; }
+    .wrap { max-width: 900px; margin: 0 auto; }
+    h1 { margin:0; font-size: 28px; }
+    p { line-height: 1.55; }
+    .muted { color: var(--muted); }
+    main { padding: 18px 16px 40px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius: 12px; padding: 16px; }
+    ul { margin: 10px 0 0 18px; }
+    a { color: #0b57d0; }
+    footer { padding: 18px 16px; border-top:1px solid var(--border); color:var(--muted); }
+    nav a { margin-right: 14px; }
+    code { background:#f1f1f1; padding: 2px 6px; border-radius: 6px; }
+  </style>
 </head>
 <body>
-  <h1>SpinNudge</h1>
-  <p>Automated laundry cycle notifications via SMS and voice call.</p>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms & Conditions</a>
+  <header>
+    <div class="wrap">
+      <h1>SpinNudge</h1>
+      <p class="muted">Automated laundry cycle notifications via SMS and voice call.</p>
+      <nav>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms & Conditions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="card">
+        <p><strong>What we do</strong></p>
+        <ul>
+          <li>Send SMS updates about a laundry session (start, reminders, completion).</li>
+          <li>If a user doesn’t respond to SMS or doesn’t retrieve laundry in time, we may place an automated voice call.</li>
+          <li>No marketing messages.</li>
+        </ul>
+
+        <p class="muted" style="margin-top:14px;">
+          For help, reply <code>HELP</code> to messages or contact: <a href="mailto:rayasmey@gmail.com">rayasmey@gmail.com</a><br/>
+          To opt out of SMS, reply <code>STOP</code>.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> SpinNudge</div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
