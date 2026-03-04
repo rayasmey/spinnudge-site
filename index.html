@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SpinNudge</title>
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <header class="topbar">
@@ -14,7 +14,7 @@
         <span class="brand-name">SpinNudge</span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a class="nav-pill active" href="/">Home</a>
         <a class="nav-pill" href="/privacy">Privacy</a>
         <a class="nav-pill" href="/terms">Terms</a>
@@ -26,7 +26,8 @@
     <section class="hero card">
       <h1>Less waiting. Fewer conflicts.</h1>
       <p class="subtitle">
-        SpinNudge sends automated laundry reminders via SMS and, if needed, voice calls so people pick up laundry on time.
+        SpinNudge sends automated, transactional (non-marketing) laundry notifications via SMS and, if needed, voice calls
+        to help people pick up laundry on time.
       </p>
 
       <div class="grid">
@@ -35,15 +36,31 @@
           <ul class="mini-list">
             <li>Start confirmations</li>
             <li>Completion reminders</li>
-            <li>Escalation if laundry isn't retrieved</li>
+            <li>Follow-ups if laundry isn’t retrieved</li>
           </ul>
+          <p class="mini-text" style="margin-top:.75rem;">
+            <strong>Message frequency:</strong> varies by usage. You may receive multiple messages per laundry session.
+          </p>
         </div>
 
         <div class="mini-card">
           <div class="mini-title">📞 Why voice calls?</div>
           <p class="mini-text">
-            If SMS is ignored, we may place a voice call to reduce machine blocking.
+            If SMS is ignored and laundry still isn’t retrieved, we may place a voice call to reduce machine blocking.
           </p>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-title">🛡️ Consent & opt-out</div>
+          <p class="mini-text">
+            By submitting your phone number in the SpinNudge form, you consent to receive recurring automated
+            transactional SMS and voice calls related to your laundry session.
+          </p>
+          <ul class="mini-list">
+            <li>Reply <strong>STOP</strong> to opt out of SMS</li>
+            <li>Reply <strong>HELP</strong> for help</li>
+            <li>Message & data rates may apply</li>
+          </ul>
         </div>
 
         <div class="mini-card">
@@ -56,10 +73,21 @@
         <div class="mini-card">
           <div class="mini-title">✉️ Support</div>
           <p class="mini-text">
-            <a href="mailto:rayasmey@gmail.com" class="link">rayasmey@gmail.com</a>
+            <a href="mailto:support@spinnudge.com" class="link">support@spinnudge.com</a>
+          </p>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-title">📄 Policies</div>
+          <p class="mini-text">
+            See our <a class="link" href="/privacy">Privacy Policy</a> and <a class="link" href="/terms">Terms &amp; Conditions</a>.
           </p>
         </div>
       </div>
+
+      <p class="subtitle" style="margin-top:1rem; font-size:.95rem;">
+        Carrier participation may vary. Carriers are not responsible for delayed or undelivered messages.
+      </p>
     </section>
   </main>
 
