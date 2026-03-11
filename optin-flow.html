@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpinNudge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="badge">SpinNudge</div>
+
+        <h2 th:text="'Machine ' + ${machineId}"></h2>
+
+        <!-- ✅ CASE 1: No active session → show Start form -->
+        <div th:if="${activeSession == null}">
+            <h1>Start a session</h1>
+
+            <form th:action="@{/m/{machineId}/start(machineId=${machineId})}" method="post">
+                <label>Phone</label>
+                <input
+                        name="phone"
+                        inputmode="tel"
+                        autocomplete="off"
+                        placeholder="6412339753"
+                        required
+                        pattern="[0-9]{10}"
+                        title="Enter a 10-digit US phone number">
+
+                <label>Apartment / Room</label>
+                <input name="apartment" placeholder="e.g. E7" required>
+
+                <label>Cycle</label>
+                <select name="cyclePreset">
+                    <option th:each="preset : ${presets}"
+                            th:value="${preset}"
+                            th:text="${preset}">
+                    </option>
+                </select>
+
+                <button class="btn" type="submit">Continue</button>
+                <p style="font-size:14px; margin-top:12px; line-height:1.4;">
+                    By entering your phone number and starting a session, you agree to receive automated
+                    transactional SMS notifications from <strong>SpinNudge</strong> regarding your laundry cycle,
+                    including completion alerts and reminder notifications.
+
+                    Message frequency varies by laundry session. Message and data rates may apply.
+                    Reply <strong>STOP</strong> to opt out or <strong>HELP</strong> for help.
+
+                    See our
+                    <a href="https://spinnudge.com/privacy">Privacy Policy</a> and
+                    <a href="https://spinnudge.com/terms">Terms & Conditions</a>.
+                </p>
+                <div class="help">Tip: Scan now, but press <b>Continue</b> only when you’re ready to load.</div>
+            </form>
+
+            <!-- 🔽 Hogged/occupied (unknown user) -->
+            <div style="margin-top:18px;">
+                <div class="help"><b>Is the machine already occupied?</b></div>
+
+                <a class="btn"
+                   th:href="@{/m/{machineId}/hogged(machineId=${machineId})}">
+                    Report: machine is occupied
+                </a>
+
+                <div class="help" style="margin-top:8px;">
+                    <br />
+                    Use this if the machine is loaded but nobody started SpinNudge.
+                </div>
+            </div>
+        </div>
+
+        <!-- ✅ CASE 2: Active session exists → show “occupied” state -->
+        <div th:if="${activeSession != null}">
+            <h1>Machine is in use</h1>
+
+            <div class="help">
+                Current status:
+                <b th:text="${activeSession.status}"></b>
+            </div>
+
+            <div class="help" style="margin-top:10px;">
+                <br />
+                If you are here to pick up laundry, use the pickup QR on the machine.
+            </div>
+
+            <!-- ✅ Working pickup button (includes qr) -->
+            <a class="btn"
+               th:href="@{/m/{machineId}/pickup-qr-url(machineId=${machineId})}"
+               style="margin-top:14px;">
+                Go to pickup page
+            </a>
+
+            <div class="help" style="margin-top:8px;">
+                <br />
+                This link generates a fresh pickup token.
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
